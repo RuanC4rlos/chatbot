@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatbot Site</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: #e7e7e7;
+            }
+        }
+    </style>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+</head>
+
+<body>
+    <h1>Bem-vindo ao nosso Chatbot!</h1>
+    <df-messenger intent="WELCOME" chat-title="Produto-Entrega" agent-id="458b4abb-6229-4a20-87c4-a66afee28665"
+        language-code="pt-br"></df-messenger>
+</body>
+
+</html>
