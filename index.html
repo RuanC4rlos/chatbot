@@ -15,45 +15,40 @@
             background-color: #f7f7f7;
             font-family: Arial, sans-serif;
             padding: 10px;
-            /* Adicionado espaçamento interno para melhor visualização */
         }
 
         h1 {
             color: #333;
             font-size: 2em;
             margin-bottom: 10px;
-            /* Adicionado espaçamento inferior */
         }
 
         df-messenger {
-            --df-messenger-bot-message: #878fac;
+            --df-messenger-bot-message: #5f5f5f;
             --df-messenger-button-titlebar-color: #1751ff;
             --df-messenger-chat-background-color: #fafafa;
-            --df-messenger-font-color: black;
+            --df-messenger-font-color: #FFFFFF;
+
             --df-messenger-send-icon: #878fac;
-            --df-messenger-user-message: #479b3a;
+            --df-messenger-user-message: #1751ff;
         }
 
         @media only screen and (max-width: 600px) {
             body {
                 background-color: #e7e7e7;
                 padding: 5px;
-                /* Reduzido o espaçamento interno para melhor ajuste em dispositivos móveis */
             }
 
             h1 {
                 font-size: 1.5em;
                 margin-bottom: 8px;
-                /* Ajuste do espaçamento inferior para melhor visualização em dispositivos móveis */
             }
 
             df-messenger {
                 --df-messenger-minimized-button-width: 100%;
                 --df-messenger-minimized-button-height: 100%;
                 --df-messenger-minimized-icon-height: 50px;
-                /* Reduzido o tamanho do ícone minimizado */
                 --df-messenger-minimized-icon-width: 50px;
-                /* Reduzido o tamanho do ícone minimizado */
             }
         }
     </style>
@@ -62,8 +57,8 @@
 
 <body>
     <h1>Bem-vindo ao nosso Chatbot!</h1>
-    <df-messenger intent="WELCOME" chat-title="ChatBot_Diretos_do_Consumidor"
-        agent-id="458b4abb-6229-4a20-87c4-a66afee28665" language-code="pt-br"></df-messenger>
+    <df-messenger intent="WELCOME" chat-title="Diretos do Consumidor" agent-id="458b4abb-6229-4a20-87c4-a66afee28665"
+        language-code="pt-br"></df-messenger>
 </body>
 
 </html>
